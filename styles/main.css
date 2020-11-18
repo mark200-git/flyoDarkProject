@@ -9,21 +9,22 @@ body {
     background-color: hsl(218, 28%, 13%);
     min-height: 100vh;
     max-width: 1440px;
-    /* position: absolute; */
+    
 }
 
 /* header and navigation styles */
 #logo-nav {
     height: 52px;
-    position: absolute;
+    position: relative;
     left: 80px;
     right: 80px;
     top: 73px;
+    max-width: 1280px;
 }
 
 .main-navigation {
     position: absolute;
-    right: 80px;
+    right: 0;
     top: 0;
     font-family: 'Raleway', sans-serif;
     font-size: 16px;
@@ -48,7 +49,7 @@ body {
 /* features section */
 .features{
     /* clear: both; */
-    position: absolute;
+    position: relative;
     width: 100%;
 }
 .image-div{
