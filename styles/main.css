@@ -9,25 +9,27 @@ body {
     background-color: hsl(218, 28%, 13%);
     min-height: 100vh;
     max-width: 1440px;
-    
+
 }
 
 /* header and navigation styles */
 #logo-nav {
     height: 52px;
-    position: relative;
     left: 80px;
-    right: 80px;
-    top: 73px;
+    margin-top: 73px;
     max-width: 1280px;
+    position: relative;
+    right: 80px;
+
 }
 
 .main-navigation {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
     position: absolute;
     right: 0;
     top: 0;
-    font-family: 'Raleway', sans-serif;
-    font-size: 16px;
+
 }
 
 .menu-list {
@@ -47,14 +49,37 @@ body {
 }
 
 /* features section */
-.features{
-    /* clear: both; */
+.big-container{
     position: relative;
-    width: 100%;
+    top: 59px;
+    max-width: 100%;
+}
+.features{
+    position: relative;
 }
 .image-div{
-
     left: calc(50% - 360px);
-    position: absolute;
-    top: 200px;
+    position: relative;
+    /* transform: translateX(50%); */
+
+}
+.text-div{
+    position: relative;
+    left: 353px;
+    top: 52px;
+    text-align: center;
+    word-wrap: break-word;
+}
+.bigger-text{
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    max-width: 734px;
+}
+.smaller-text{
+    font-family: 'Open Sans';
+    font-size: 20px;
+    max-width: 734px;
+    word-wrap: break-word;
 }
