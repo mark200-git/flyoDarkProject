@@ -4,78 +4,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/main.css" />
-    <title>Flyo Dark Project - float layout</title>
+    <title>Flyo Dark Project</title>
+    <link rel="stylesheet" href="styles/main.css">
 </head>
 
 <body>
-    <header id="logo-nav">
-        <img src="images/logo.svg" alt="flyo project" />
-        <nav class="main-navigation">
-            <ul class="menu-list">
-                <li class="list-element"><a href="#">Features</a></li>
-                <li class="list-element"><a href="#">Team</a></li>
-                <li class="list-element"><a href="#">Sign in</a></li>
+    <header class="header">
+        <div class="header__logo">
+            <img src="images/logo.svg" alt="Flyo">
+        </div>
+        <nav class="navigation">
+            <ul class="navigation__list">
+                <li class="navigation__element">Features</li>
+                <li class="navigation__element">Team</li>
+                <li class="navigation__element">Sign in</li>
             </ul>
         </nav>
     </header>
-    <div class="big-container">
-        <section class="features">
-            <div class="image-div">
-                <img src="images/illustration-intro.png" alt="intro image" />
+    <div class="content">
+        <div class="intro">
+            <div class="intro__image">
+                <img src="images/illustration-intro.png" alt="Intro image. people put their documents in their files ">
             </div>
-            <div class="text-div">
-                <p class="bigger-text">
+            <div class="intro__content">
+                <h1 class="content__h1">
                     All your files in one secure location, accessible anywhere.
-                </p>
-                <p class="smaller-text">
+                </h1>
+                <p class="content__text">
                     Fylo stores all your most important files in one secure location. Access them wherever you need,
                     share and collaborate with friends family, and co-workers.
                 </p>
-                <button> Get started</button>
+                <button class="content__button">Get started</button>
             </div>
-            <img src="images/bg-curvy-desktop.svg" alt="background curve" />
-            <div class="features-group">
-                <div class="feature">
-                    <div class="feature-img">
-                        <img src="images/icon-access-anywhere.svg" alt="icon access anywhere" />
-
-                    </div>
-                    <p class="feature-big">Access your files, anywhere</p>
-                    <p class="feature-small"> The ability to use a smartphone, tablet, or computer to access your
-                        account means your files follow you everywhere.</p>
+        </div>
+        <div class="features">
+            <div class="features__element">
+                <div class="features__image">
+                    <img src="images/icon-access-anywhere.svg" alt="Computer with smartphone image">
                 </div>
-                <div class="feature">
-                    <div class="feature-img">
-                        <img src="images/icon-security.svg" alt="security icon" />
-
-                    </div>
-                    <p class="feature-big">Security you can trust</p>
-                    <p class="feature-small">2-factor authentication and user-controlled encryption are just a couple of
-                        the security features we allow to help secure your files.</p>
-                </div>
-                <div class="feature">
-                    <div class="feature-img">
-                        <img src="images/icon-collaboration.svg" alt="collaboration icon" />
-                    </div>
-                    <p class="feature-big">Real-time collaboration</p>
-                    <p class="feature-small">Securely share files and folders with friends, family and colleagues for
-                        live collaboration. No email attachments required.</p>
-                </div>
-                <div class="feature">
-                    <div class="feature-img">
-                        <img src="images/icon-any-file.svg" alt="any file icon" />
-                    </div>
-                    <p class="feature-big">Store any type of file</p>
-                    <p class="feature-small">Whether you're sharing holidays photos or work documents, Fylo has you
-                        covered allowing for all file types to be securely stored and shared.</p>
-                    <p></p>
-                </div>
+                <h2 class="content__h2">Acces your files, anywhere</h2>
+                <p class="content__text--smaller">
+                    The ability to use a smartphone, tablet, or computer to access your account means your files follow
+                    you everywhere.
+                </p>
             </div>
-
-        </section>
+            <div class="features__element">
+                <div class="features__image">
+                    <img src="images/icon-security.svg" alt="Security shield icon">
+                </div>
+                <h2 class="content__h2">
+                    Security you can trust
+                </h2>
+                <p class="content__text--smaller">
+                    2-factor authentication and user-controlled encryption are just a couple of the security features we
+                    allow to help secure your files.
+                </p>
+            </div>
+            <div class="features__element">
+                <div class="features__image">
+                    <img src="images/icon-collaboration.svg" alt="Collaboration icon">
+                </div>
+                <h2 class="content__h2">
+                    Real-time collaboration
+                </h2>
+                <p class="content__text--smaller">
+                    Securely share files and folders with friends, family and colleagues for live collaboration. No
+                    email attachments required.
+                </p>
+            </div>
+            <div class="features__element">
+                <div class="features__image"><img src="images/icon-any-file.svg" alt="Store files icon"></div>
+                <h2 class="content__h2">
+                    Store any type of file
+                </h2>
+                <p class="content__text--smaller">
+                    Whether you're sharing holidays photos or work documents, Fylo has you covered allowing for all file
+                    types to be securely stored and shared.
+                </p>
+            </div>
+        </div>
     </div>
-
 </body>
 
 </html>
