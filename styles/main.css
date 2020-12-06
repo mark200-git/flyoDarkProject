@@ -1,2 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+:root{
+    --bgcolor: hsl(218, 28%, 13%);
+--h1_size: 2.8rem;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: var(--bgcolor);
+    font-size: 14px;
+}
