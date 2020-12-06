@@ -1,14 +1,43 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-:root{
-    --bgcolor: hsl(218, 28%, 13%);
---h1_size: 2.8rem;
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+:root {
+  --mainColor: hsl(218, 28%, 13%);
+  --h1_size: 2.8rem;
+  --h2_size: 1.4rem;
+  --h_nav_family: "Raleway", sans-serif;
+  --normal_family: "Open Sans", sans-serif;
 }
-*{
-    margin: 0;
-    padding: 0;
+
+* {
+  margin: 0;
+  padding: 0;
 }
-body{
-    background-color: var(--bgcolor);
-    font-size: 14px;
+
+body {
+  background-color: var(--mainColor);
+  color: #fff;
+  font-size: 14px;
+  max-width: 1440px;
+  min-height: 100vh;
+}
+.header {
+  margin: 73px 80px 59px;
+  max-height: 52px;
+  position: relative;
+}
+.navigation {
+  font-family: var(--h_nav_family);
+  font-size: 1.14rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.navigation__list {
+  list-style-type: none;
+}
+.navigation__element{
+  line-height: 52px;
+  float: left;
+  padding-left: 57px;
 }
