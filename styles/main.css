@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap");
 :root {
   --mainColor: hsl(218, 28%, 13%);
   --h1_size: 2.8rem;
-  --h2_size: 1.4rem;
+  --h2_content_size: 1.4rem;
   --h_nav_family: "Raleway", sans-serif;
   --normal_family: "Open Sans", sans-serif;
 }
@@ -16,28 +16,36 @@
 
 body {
   background-color: var(--mainColor);
-  color: #fff;
-  font-size: 14px;
-  max-width: 1440px;
-  min-height: 100vh;
+  width: 1440px;
+  min-width: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 .header {
-  margin: 73px 80px 59px;
+  align-self: center;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 73px;
   max-height: 52px;
-  position: relative;
+  width: 1280px;
 }
+
 .navigation {
-  font-family: var(--h_nav_family);
-  font-size: 1.14rem;
-  position: absolute;
-  right: 0;
-  top: 0;
+  flex-basis: 24.5%;
 }
+
 .navigation__list {
+  display: flex;
   list-style-type: none;
 }
-.navigation__element{
-  line-height: 52px;
-  float: left;
-  padding-left: 57px;
+.navigation__element {
+  display: flex;
+  font-family: var(--h_nav_family);
+  justify-content: flex-end;
+}
+.navigation__link {
+  text-decoration: none;
+  color: #fff;
+  padding: 17px 0px 16px 53px ;
+  text-align: center;
 }
